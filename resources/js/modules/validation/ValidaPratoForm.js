@@ -69,7 +69,7 @@ class ValidaPratoForm {
             return;
         }
 
-        if(!/^[a-zA-Zà-úÀ-Ú\s]+$/.test(pratoNome)) {
+        if(!/^[a-zA-Zà-úÀ-ÚçÇ\s\-,]+$/.test(pratoNome)) {
             Error.criaErro(field, 'Deve conter apenas letras');
             valid = false;
         }
@@ -87,7 +87,7 @@ class ValidaPratoForm {
             return;
         }
 
-        if(!/^[a-zA-Zà-úÀ-Ú\s]+$/.test(pratoDesc)) {
+        if(!/^[a-zA-Zà-úÀ-ÚçÇ\s\-,]+$/.test(pratoDesc)) {
             Error.criaErro(field, 'Deve conter apenas letras');
             valid = false;
         }
